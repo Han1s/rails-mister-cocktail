@@ -14,13 +14,20 @@ puts "seeding the database"
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "coke")
+Ingredient.create(name: "rum")
+Ingredient.create(name: "gin")
+Ingredient.create(name: "tonic")
+Ingredient.create(name: "strawberries")
+Ingredient.create(name: "sugar")
 
-Cocktail.create(name: "virgin cuba libre")
-Cocktail.create(name: "white russian")
-Cocktail.create(name: "whiskey sour")
+# Cocktail.create(name: "virgin cuba libre")
+# Cocktail.create(name: "white russian")
+# Cocktail.create(name: "whiskey sour")
 
-Dose.create(description: "1 bucket")
-Dose.create(description: "4 elephants")
-Dose.create(description: "2 handfuls")
+# Dose.create(description: "1 bucket")
+# Dose.create(description: "4 elephants")
+# Dose.create(description: "2 handfuls")
 
 puts "database seeded"
