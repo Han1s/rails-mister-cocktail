@@ -1,8 +1,11 @@
 <p><%= @cocktail.name %></p>
 <% @doses.each do |dose| %>
-  <p><%= dose.description %> of <%= Ingredient.find(dose.ingredient_id).name %></p>
+  <p><%= dose.description %> of <%= Ingredient.find(dose.ingredient_id).name %>
   <%= link_to "Delete the dose", cocktail_dose_path(@cocktail, dose),
+        :class=>"label label-default",
         method: :delete,
         data: { confirm: "Are you sure?" } %>
+        </p>
 <% end %>
+<p><%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %></p>
 <p><%= link_to "Add a dose", new_cocktail_dose_path(@cocktail), :class=>"btn btn-success" %></p>
